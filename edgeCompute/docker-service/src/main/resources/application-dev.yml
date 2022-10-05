@@ -1,0 +1,41 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /docker
+spring:
+  application:
+    name: dockerservice
+  datasource:
+    url: jdbc:mysql://124.222.66.170:3306/compute?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    username: root
+    password: cong0917
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      server-addr: 124.222.60.243:8848
+      discovery:
+        cluster-name: SH
+  redis:
+    host: 101.201.143.127
+    port: 6379
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+
+swam:
+  managerUrl: tcp://124.222.66.170:2376
+
+ca:
+  path: E:\桌面\edge_of_computing\cloud-edgeCompute\docker-service\src\main\resources\static
+
+enable:
+  swagger: true

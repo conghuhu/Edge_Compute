@@ -1,0 +1,4 @@
+FROM anapsix/alpine-java
+MAINTAINER conghuhu <cislc_gateway>
+ADD ./gateway.jar /gateway.jar
+CMD java -jar /gateway.jar

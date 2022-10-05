@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: me.mason.springbatch.IncrementJobTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! - in me.mason.springbatch.IncrementJobTest
+initializationError  Time elapsed: 0.012 s  <<< ERROR!
+org.junit.runners.model.InvalidTestClassError: 
+Invalid test class 'me.mason.springbatch.IncrementJobTest':
+  1. No runnable methods
+

@@ -1,0 +1,99 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "me.mason.springbatch.config.DataSourceConfig",
+      "sourceMethod": "batchDatasource()"
+    },
+    {
+      "name": "spring.edge-datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "me.mason.springbatch.config.DataSourceConfig",
+      "sourceMethod": "edgeDatasource()"
+    },
+    {
+      "name": "spring.origin-datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "me.mason.springbatch.config.DataSourceConfig",
+      "sourceMethod": "originDatasource()"
+    },
+    {
+      "name": "spring.target-datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "me.mason.springbatch.config.DataSourceConfig",
+      "sourceMethod": "targetDatasource()"
+    },
+    {
+      "name": "swagger",
+      "type": "me.mason.springbatch.config.SwaggerInfo",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    }
+  ],
+  "properties": [
+    {
+      "name": "swagger.ant-path",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    },
+    {
+      "name": "swagger.base-package",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    },
+    {
+      "name": "swagger.contact-email",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    },
+    {
+      "name": "swagger.contact-name",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    },
+    {
+      "name": "swagger.contact-url",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    },
+    {
+      "name": "swagger.description",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo",
+      "defaultValue": "Swagger 自动生成接口文档"
+    },
+    {
+      "name": "swagger.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    },
+    {
+      "name": "swagger.group-name",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo",
+      "defaultValue": "controller"
+    },
+    {
+      "name": "swagger.license",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    },
+    {
+      "name": "swagger.license-url",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    },
+    {
+      "name": "swagger.title",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo",
+      "defaultValue": "HTTP API"
+    },
+    {
+      "name": "swagger.version",
+      "type": "java.lang.String",
+      "sourceType": "me.mason.springbatch.config.SwaggerInfo"
+    }
+  ],
+  "hints": []
+}

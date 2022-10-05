@@ -1,0 +1,5 @@
+cn\itcast\feign\pojo\AdminInfo.class
+cn\itcast\feign\config\DefaultFeignConfiguration.class
+cn\itcast\feign\clients\UserClient.class
+cn\itcast\feign\clients\fallback\UserClientFallbackFactory.class
+cn\itcast\feign\pojo\TokenParam.class

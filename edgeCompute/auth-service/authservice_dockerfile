@@ -1,0 +1,4 @@
+FROM anapsix/alpine-java
+MAINTAINER conghuhu <cislc_dockerservice>
+ADD ./authservice.jar /authservice.jar
+CMD java -jar /authservice.jar --spring.profiles.active=prod

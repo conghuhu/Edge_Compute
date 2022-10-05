@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: dockerservice
+  profiles:
+    active: dev

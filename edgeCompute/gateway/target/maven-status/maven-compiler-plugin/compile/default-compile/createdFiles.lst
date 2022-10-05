@@ -1,0 +1,6 @@
+cn\itcast\gateway\config\MessageConfig.class
+cn\itcast\gateway\utils\JwtTokenUtil.class
+cn\itcast\gateway\AuthorizeFilter.class
+cn\itcast\gateway\config\RedisConfig.class
+cn\itcast\gateway\GatewayApplication.class
+cn\itcast\gateway\utils\RedisUtil.class

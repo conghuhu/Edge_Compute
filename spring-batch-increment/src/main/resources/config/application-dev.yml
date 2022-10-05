@@ -1,0 +1,47 @@
+beetlsql:
+  basePackage: me.mason.springbatch
+  daoSuffix: Repository
+  ds:
+    datasource:
+      basePackage: me.mason.springbatch.dao.local
+    edgeDatasource:
+      basePackage: me.mason.springbatch.dao.edge
+    originDatasource:
+      basePackage: me.mason.springbatch.dao.origin
+    targetDatasource:
+      basePackage: me.mason.springbatch.dao.target
+  mutiple:
+    datasource: datasource,originDatasource,targetDatasource,edgeDatasource
+server:
+  port: 8080
+  servlet:
+    context-path: /example
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  application:
+    name: springBatchService
+  batch:
+    job:
+      enabled: false
+  datasource:
+    jdbc-url: jdbc:mysql://124.222.66.170:3306/my_spring_batch?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+    password: cong0917
+    username: root
+  edge-datasource:
+    jdbc-url: jdbc:mysql://124.222.224.173:3306/my_test2?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+    password: cong0917
+    username: root
+  origin-datasource:
+    jdbc-url: jdbc:mysql://150.158.97.5:3306/my_test1?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+    password: cong0917
+    username: root
+  target-datasource:
+    jdbc-url: jdbc:mysql://101.42.243.67:3306/my_db?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+    password: wys990225
+    username: root
+nacos:
+  config:
+    server-addr: 124.222.60.243:8848
+  discovery:
+    server-addr: 124.222.60.243
